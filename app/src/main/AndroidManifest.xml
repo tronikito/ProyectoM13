@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dam.m13.buddytoilet">
+
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    -->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/i_google"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/i_google"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BuddyToilet">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="dam.m13.buddytoilet.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.AddWCPointActivity" />
+        <activity android:name=".ui.AddCommentActivity" />
+        <activity android:name=".ui.WCPointActivity" />
+        <activity android:name=".ui.ProfileActivity" />
+        <activity android:name=".ui.NavigationActivity" />
+        <activity android:name=".ui.ForgotActivity" />
+        <activity android:name=".ui.FilterActivity" />
+        <activity android:name=".ui.LoginActivity"/>
+        <activity android:name=".ui.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

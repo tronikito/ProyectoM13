@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_horizontal"
+            android:onClick="closeNavigationDrawerMenu"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:gravity="center_horizontal"
+                android:text="@string/welcome"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="9dp"
+            android:background="#636363" />
+
+        <LinearLayout
+            android:id="@+id/profileLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/m_profile" />
+
+            <TextView
+                android:id="@+id/profileTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openProfileUser"
+                android:padding="9dp"
+                android:text="@string/profile" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/myCommentsLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_horizontal"
+            android:onClick="openFavouriteReviews"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/m_own_reviews" />
+
+            <TextView
+                android:id="@+id/ownReviewsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openFavouriteComments"
+                android:padding="9dp"
+                android:text="@string/own_reviews" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filterLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/filterImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/m_filter" />
+
+            <TextView
+                android:id="@+id/filterTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openFilters"
+                android:padding="9dp"
+                android:text="@string/filter" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:background="#636363" />
+
+        <LinearLayout
+            android:id="@+id/settingsLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/settingsImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/m_settings" />
+
+            <TextView
+                android:id="@+id/settingsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="9dp"
+                android:text="Settings" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logoutLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_horizontal"
+            android:onClick="logoutUser"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/m_logout" />
+
+            <TextView
+                android:id="@+id/logoutTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="logoutUser"
+                android:padding="9dp"
+                android:text="Logout" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddWCPointActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/addWCPointTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/add_wcpoint_title"
+                android:textColor="@color/primaryColor"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/profileBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addWCPointTitle">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/imageProgressBar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="23dp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/wcImageView"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/p_wc" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/p_switchbackground"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <TextView
+                            android:id="@+id/loadCamera"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/b_button1"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="3dp"
+                            android:paddingBottom="5dp"
+                            android:radius="5dp"
+                            android:text="@string/loadcamera"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/p_switchbackground"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <TextView
+                            android:id="@+id/loadImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/b_button1"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="3dp"
+                            android:paddingBottom="5dp"
+                            android:radius="5dp"
+                            android:text="@string/loadimage"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/WCPointReviewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/add_wcpoint_review_title"
+                android:textColor="@color/secondTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileBox" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addWCPointNameField"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/WCPointReviewTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@id/wcpointNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/p_textinputbackground"
+                    android:fontFamily="sans-serif"
+                    android:paddingStart="55dp"
+                    android:paddingLeft="55dp"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addWCPointNameField">
+
+                <TextView
+                    android:id="@+id/genderTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="25dp"
+                    android:text="@string/add_wcpoint_unisex_title"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/unisexField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/p_switchbackground"
+                    android:orientation="horizontal"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/yesUnisex"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b_button1"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="5dp"
+                        android:radius="5dp"
+                        android:text="@string/yes"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/noUnisex"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b_button2"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="5dp"
+                        android:radius="5dp"
+                        android:text="@string/no"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/freeAccesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="25dp"
+                    android:text="@string/add_wcpoint_free_title"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/freeAccesField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/p_switchbackground"
+                    android:orientation="horizontal"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/yesAccess"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b_button1"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="5dp"
+                        android:radius="5dp"
+                        android:text="@string/yes"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/noAccess"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b_button2"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="5dp"
+                        android:radius="5dp"
+                        android:text="@string/no"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/diaperChangingTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="25dp"
+                    android:text="@string/add_wcpoint_diaper_title"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/diaperChangingField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/p_switchbackground"
+                    android:orientation="horizontal"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/yesDiaper"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b_button1"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="5dp"
+                        android:radius="5dp"
+                        android:text="@string/yes"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/noDiaper"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b_button2"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="5dp"
+                        android:radius="5dp"
+                        android:text="@string/no"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/accessibilityTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="25dp"
+                    android:text="@string/add_wcpoint_disabled_title"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/accesibilityField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/p_switchbackground"
+                    android:orientation="horizontal"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/yesAdapted"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b_button1"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="5dp"
+                        android:radius="5dp"
+                        android:text="@string/yes"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/noAdapted"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/b_button2"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="5dp"
+                        android:radius="5dp"
+                        android:text="@string/no"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/b_button3"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/add_wcpoint_submit_btn"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

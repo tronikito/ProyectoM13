@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "174728525913",
+    "firebase_url": "https://buddytoiletprojectm13-default-rtdb.firebaseio.com",
+    "project_id": "buddytoiletprojectm13",
+    "storage_bucket": "buddytoiletprojectm13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174728525913:android:e2ff0b92848d50a06fd948",
+        "android_client_info": {
+          "package_name": "dam.m13.buddytoilet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174728525913-or29n4fnbdqu913qklr5kjog33iju9p5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dam.m13.buddytoilet",
+            "certificate_hash": "87cfcdde665ed6aa047e54d0e6a1fd00fbc86cd3"
+          }
+        },
+        {
+          "client_id": "174728525913-0imsejqo83b8j2r5k91hiuhfdghtnbir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq7UFS9lqz7vihRd-fuWrgutTigqu2wIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174728525913-0imsejqo83b8j2r5k91hiuhfdghtnbir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- each item's action runs independent from the others -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"/>
+
+        <item
+            android:id="@+id/nav_filter"
+            android:title="Filter"/>
+
+        <item
+            android:id="@+id/nav_message"
+            android:title="Messages"/>
+    </group>
+
+    <item android:title="Setup Menu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_settings"
+                    android:title="Settings"/>
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout"/>
+            </group>
+        </menu>
+    </item>
+</menu>

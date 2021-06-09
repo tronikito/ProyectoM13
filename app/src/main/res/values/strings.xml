@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">BuddyToilet</string>
+
+    <!-- shared preferences filenames -->
+    <string name="login_data">loginData</string>
+    <string name="filter_data">filterData</string>
+
+    <string name="email_key">email</string>
+    <string name="password_key">password</string>
+
+        <!-- filter values -->
+        <string-array name="filter_values">
+            <item>Access</item>
+            <item>Unisex</item>
+            <item>Adapted</item>
+            <item>Diaper</item>
+        </string-array>
+        <string name="distance">distance</string>
+        <string name="filters_state">filtersState</string>
+
+    <!-- shared preferences filenames -->
+
+
+    <!-- Intent signals -->
+    <string name="user_intent">user</string>
+    <string name="wcpoint_intent">wcpoint</string>
+
+    <string name="new_wcpoint_default_name">"New WCPoint"</string>
+
+    <!-- DB collections names -->
+    <string name="wcpoints_collection">WCPoints</string>
+    <string name="no_validated_wcpoints_collection">NoValidatedWCPoints</string>
+    <string name="users_collection">Users</string>
+    <string name="comments_collection">Comments</string>
+
+    <!-- login -->
+    <string name="title">Buddy Toilet</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login_button">LOGIN</string>
+    <string name="forgot_text">Forgot Password?</string>
+    <string name="register_text">Register</string>
+
+    <!-- register -->
+    <string name="register_user_text">REGISTER USER</string>
+    <string name="register_user_name_text">Full name</string>
+    <string name="register_user_sex_text">Sex</string>
+    <string name="register_user_url_image">Profile Image</string>
+
+    <!-- profile -->
+    <string name="welcome">Welcome</string>
+    <string name="delete_button">DELETE</string>
+    <string name="logout_button">LOGOUT</string>
+    <string name="profile">Profile</string>
+    <string name="own_reviews">Own Reviews</string>
+    <string name="filter">Filter</string>
+    <string name="home">home</string>
+    <string name="navigation">Navigation</string>
+    <string name="filter_fragment">FilterFragment</string>
+    <string name="navigation_fragment">NavigationFragment</string>
+    <string name="profile_fragment">ProfileFragment</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="free_access">Free Access</string>
+    <string name="unisex">Unisex</string>
+    <string name="diaperchanging">Diaper changing</string>
+    <string name="username">Username</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="email_email_com">Email@email.com</string>
+    <string name="additional_info">Additional info</string>
+    <string name="myreviews">My WCPoints</string>
+    <string name="userlogin">User Login</string>
+    <string name="email_text">Email</string>
+    <string name="login_text">Login</string>
+    <string name="forgotuserpass">Forgot Username Password?</string>
+    <string name="signGoogle">Sign in with Google</string>
+    <string name="singFacebook">Sign in with Facebook</string>
+    <string name="createaccount">Create Your Account</string>
+    <string name="adapted">Adapted</string>
+    <string name="registeruser">Register new user</string>
+    <string name="register">Register</string>
+    <string name="loadimage">Load Image</string>
+    <string name="apply">Apply</string>
+    <string name="apply_filters">Apply Filters</string>
+
+    <!-- Token Access for Mapbox map's data -->
+    <string name="mapbox_access_token">pk.eyJ1IjoiYnVkZHl0b2lsZXQiLCJhIjoiY2tubmN5em80MTBjMzJ4bXB0eGtqa3I3dSJ9.17NetqemfnjrbC8tNjmFKw</string>
+    <!-- <string name="mapbox_access_token">sk.eyJ1IjoiYnVkZHl0b2lsZXQiLCJhIjoiY2tubmZvYXNmMHlvaDJvcHJkZHEweDB6cSJ9.LC-z9GRB3TnqkGDoMojkpg</string> -->
+
+    <!-- Permissions messages -->
+    <string name="user_location_permission_granted">Permission granted</string>
+    <string name="user_location_permission_not_granted">Permission NOT granted</string>
+
+    <!-- WCPoint screen -->
+    <string name="wcpoint_name">Sample WCPoint name</string>
+    <string name="wcpoint_info_title">About this WCPoint</string>
+    <string name="wcpoint_comment_title">Community Reviews</string>
+    <string name="wcpoint_comment_btn">Add a review</string>
+
+
+    <!-- Popup Options Menu Styles (NavigationActivity) -->
+    <string name="normal_style">Normal</string>
+    <string name="satellite_style">Satellite</string>
+    <string name="dark_style">Night</string>
+
+    <string name="normal_style_loaded_text">NORMAL style loaded</string>
+    <string name="satellite_style_loaded_text">SATELLITE style loaded</string>
+    <string name="dark_style_loaded_text">NIGHT style loaded</string>
+
+    <!-- Options Popup Menu Marker Actions -->
+    <!-- common user -->
+    <string name="request_add_marker">Request add marker</string>
+    <string name="info_marker">Info of Marker</string>
+
+    <string name="request_add_marker_clicked_text">Request Add marker clicked</string>
+    <string name="reviews_marker_clicked_text">Reviews marker clicked</string>
+
+    <!-- admin user -->
+    <string name="add_marker">Add Marker</string>
+    <string name="remove_marker">Remove Marker</string>
+    <string name="validate_marker">Validate Marker</string>
+
+    <string name="add_marker_clicked_text">Add marker clicked</string>
+    <string name="remove_marker_clicked_text">Remove marker clicked</string>
+    <string name="validate_marker_clicked_text">Remove marker clicked</string>
+
+    <!-- Add WCPoint screen -->
+    <string name="add_wcpoint_title">WCPoint Request</string>
+    <string name="add_wcpoint_title_admin">Add WCPoint</string>
+    <string name="add_wcpoint_review_title">Set title</string>
+    <string name="add_wcpoint_unisex_title">Unisex</string>
+    <string name="add_wcpoint_disabled_title">Accessibility</string>
+    <string name="add_wcpoint_diaper_title">Diaper changing station</string>
+    <string name="add_wcpoint_free_title">Free Access</string>
+    <string name="loadcamera">Load From Camera</string>
+    <string name="add_wcpoint_submit_btn">Submit</string>
+
+    <!-- Comment screen -->
+    <string name="comment_sample_title">Sample title!!</string>
+    <string name="comment_sample_text"> influenced by Gemmell\'s Rigante and GRR Martin\'s Game of Thrones - two good strands of DNA. Great characters and plot - it gets faster and more fascinating by the page. All I want now is for the author to put everything else aside, including his health - and write two or three more as fast as humanly possible. Hell of a debut: Highly recommended -- Conn Iggulden </string>
+    <string name="comment_sample_user">Jeremias Pomer</string>
+
+    <!-- Add Comment screen -->
+    <string name="add_comment_title">Write a review</string>
+    <string name="add_comment_review_title">Add a title</string>
+    <string name="add_comment_text_label">Add a written review</string>
+    <string name="add_comment_submit_btn">Publish</string>
+    <string name="delete_account">DELETE ACCOUNT</string>
+
+    <!-- Toast messages -->
+    <string name="see_you_soon">"See you soon :D"</string>
+    <string name="no_wcpoint_chosen">No WCPoint chosen</string>
+    <string name="wcpoint_added">WCPoint added</string>
+    <string name="no_wcpoint_added">WCPoint NOT added</string>
+    <string name="user_data_not_found">"User's data not found"</string>
+
+    <string name="filters_applied">Filters applied</string>
+
+    <string name="validated_filter_on">Validated filter ON</string>
+    <string name="validated_filter_off">Validated filter OFF</string>
+
+    <!-- boolean values -->
+    <string name="true_value">true</string>
+    <string name="false_value">false</string>
+    <string name="apply_filter">Apply Filters</string>
+
+    <!-- chosenMarkerInfoLayout and addMarkerInfoLayout -->
+    <string name="distance_text">Distance</string>
+    <string name="lat_text">Lat:</string>
+    <string name="long_text">Lng:</string>
+
+    <string name="lng_text">Lng:</string>
+
+
+    <string name="noreviews">You no have any review publish</string>
+    <string name="startadd">Start Add some reviews, clicking on map navigation and adding entrys</string>
+    <string name="recover">Recover password</string>
+    <string name="sendemail">Send Email</string>
+</resources>
